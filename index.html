@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мой топ фильмов — от 64-го до 1-го места</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f7f7f7;color:#222;font:17px/1.7 Georgia,"Times New Roman",serif}
+header{background:#fff;border-bottom:1px solid #e8e8e8;text-align:center;padding:24px 16px}
+.brand{font:700 12px Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#888}
+main{max-width:760px;margin:38px auto;padding:0 22px}
+h1{font:700 clamp(30px,5vw,42px)/1.15 Arial,sans-serif;letter-spacing:-.035em;margin:0 0 12px}
+.meta{font:14px Arial,sans-serif;color:#888}
+.lead{margin:28px 0 34px}
+.entry{padding:28px 0;border-bottom:1px solid #e8e8e8;scroll-margin-top:15px}
+.rank{font:700 12px Arial,sans-serif;letter-spacing:.12em;color:#2783c5;margin-bottom:9px}
+h2{font:700 23px/1.3 Arial,sans-serif;margin:0 0 12px}
+.entry p{margin:0}
+.poster{display:block;width:min(100%,420px);max-height:560px;object-fit:contain;object-position:left center;margin:18px 0 16px;border-radius:8px;background:#eee}
+@media(max-width:600px){.poster{width:100%;max-height:520px}}
+.links{font:14px Arial,sans-serif;margin-top:30px}
+.links a{color:#2783c5;text-decoration:none;margin-right:15px}
+.links a:hover{text-decoration:underline}
+footer{text-align:center;color:#888;font:13px Arial,sans-serif;padding:35px 10px}
+@media(max-width:600px){main{margin:25px auto;padding:0 18px}body{font-size:16px}.entry{padding:23px 0}}
+/* Mobile-friendly safeguards: media never wider than the column, long words wrap instead of overflowing */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+img,video{max-width:100%;height:auto}
+iframe,embed,object,svg{max-width:100%}
+h1,h2,p,.meta,.links,footer{overflow-wrap:break-word}
+@media(max-width:600px){
+html,body{overflow-x:hidden}
+.meta{font-size:16px}
+.links{font-size:16px;display:flex;flex-direction:column;gap:4px}
+.links a{display:flex;align-items:center;min-height:44px;min-width:44px;margin-right:0;padding:8px 0}
+footer{font-size:16px;line-height:1.5;padding:30px 18px calc(30px + env(safe-area-inset-bottom))}
+}
+</style>
+</head>
+<body>
+<header><div class="brand">Личный архив публикаций</div></header>
+<main>
+<h1>Мой топ фильмов</h1>
+<div class="meta">Общий рейтинг · от 64-го места к 1-му</div>
+<p class="lead">Рейтинг начинается с последнего места. Первое место находится в самом конце страницы — прокручивай вниз, чтобы постепенно открыть весь топ.</p>
+
+    <article class="entry" id="place-64">
+      <div class="rank">МЕСТО</div>
+      <h2>Человек с бульвара Капуцинов</h2>
+      <img class="poster" src="images/64.jpg" alt="Постер фильма на 64-м месте" loading="lazy">
+      <p>Это кино меняет людей (в прямом и переносном смысле). Прекрасная игра Андрея Миронова и Михаила Боярского и хорошо отыгранные драки.</p>
+    </article>
+
+    <article class="entry" id="place-63">
+      <div class="rank">МЕСТО</div>
+      <h2>Граф Монте-Кристо</h2>
+      <img class="poster" src="images/63.jpg" alt="Постер фильма на 63-м месте" loading="lazy">
+      <p>Пафосная экранизация романа Дюма с крутыми декорациями и превосходной операторской работой. Несмотря на продолжительность, фильм не кажется затянутым благодаря динамичному сюжету.</p>
+    </article>
+
+    <article class="entry" id="place-62">
+      <div class="rank">МЕСТО</div>
+      <h2>Миссия невыполнима</h2>
+      <img class="poster" src="images/62.jpg" alt="Постер фильма на 62-м месте" loading="lazy">
+      <p>Шпионский фильм с Томом Крузом с захватывающим сюжетом. Настоящие трюки Тома Круза стали одной из причин популярности серии. Стоит отметить и заглавную мелодию.</p>
+    </article>
+
+    <article class="entry" id="place-61">
+      <div class="rank">МЕСТО</div>
+      <h2>Чарли и шоколадная фабрика</h2>
+      <img class="poster" src="images/61.jpg" alt="Постер фильма на 61-м месте" loading="lazy">
+      <p>Фильм про лучшего кондитера в мире. Здесь есть сказочность, эксцентричность Джонни Деппа в роли Вилли Вонки и трогательный образ Чарли.</p>
+    </article>
+
+    <article class="entry" id="place-60">
+      <div class="rank">МЕСТО</div>
+      <h2>Полицейская история</h2>
+      <img class="poster" src="images/60.jpg" alt="Постер фильма на 60-м месте" loading="lazy">
+      <p>Полицейскому Кевину поручают охрану секретарши преступника. Превосходно поставленный фильм с Джеки Чаном; особенно выделяются драки.</p>
+    </article>
+
+    <article class="entry" id="place-59">
+      <div class="rank">МЕСТО</div>
+      <h2>Кто подставил кролика Роджера?</h2>
+      <img class="poster" src="images/59.jpg" alt="Постер фильма на 59-м месте" loading="lazy">
+      <p>Инновационный фильм про мультяшек: смесь детективного нуара, пародии и абсурдной комедии. Персонажи — изюминка фильма.</p>
+    </article>
+
+    <article class="entry" id="place-58">
+      <div class="rank">МЕСТО</div>
+      <h2>Маска</h2>
+      <img class="poster" src="images/58.jpg" alt="Постер фильма на 58-м месте" loading="lazy">
+      <p>Комедия с Джимом Керри в роли мультяшного безумца. Обилие сатиры, отсылок и шуток; каждая сцена вызывает улыбку.</p>
+    </article>
+
+    <article class="entry" id="place-57">
+      <div class="rank">МЕСТО</div>
+      <h2>Иван Васильевич меняет профессию</h2>
+      <img class="poster" src="images/57.jpg" alt="Постер фильма на 57-м месте" loading="lazy">
+      <p>Комедия Леонида Гайдая по повести Булгакова. Эталон советского кинематографа и советский «Назад в будущее».</p>
+    </article>
+
+    <article class="entry" id="place-56">
+      <div class="rank">МЕСТО</div>
+      <h2>Один дома</h2>
+      <img class="poster" src="images/56.jpg" alt="Постер фильма на 56-м месте" loading="lazy">
+      <p>Этот фильм, наверное, знают абсолютно все. Каждый смотрел его на Новый год. Любим его за все проделки Кевина над ворами.</p>
+    </article>
+
+    <article class="entry" id="place-55">
+      <div class="rank">МЕСТО</div>
+      <h2>Майор Гром: Чумной доктор</h2>
+      <img class="poster" src="images/55.jpg" alt="Постер фильма на 55-м месте" loading="lazy">
+      <p>Обилие экшена и юмора — то, что фильм смог отлично совместить. Российский проект, который выглядит как большой супергеройский фильм.</p>
+    </article>
+
+    <article class="entry" id="place-54">
+      <div class="rank">МЕСТО</div>
+      <h2>Майнкрафт в кино</h2>
+      <img class="poster" src="images/54.jpg" alt="Постер фильма на 54-м месте" loading="lazy">
+      <p>Экранизация легендарной игры Minecraft: крутая игра Джека Блэка, шутки и ламповая атмосфера игры.</p>
+    </article>
+
+    <article class="entry" id="place-53">
+      <div class="rank">МЕСТО</div>
+      <h2>Трасса 60</h2>
+      <img class="poster" src="images/53.jpg" alt="Постер фильма на 53-м месте" loading="lazy">
+      <p>Запутанная история о принятии себя в комедийной обёртке. Гэри Олдмэн прекрасно отыграл своего персонажа.</p>
+    </article>
+
+    <article class="entry" id="place-52">
+      <div class="rank">МЕСТО</div>
+      <h2>Остров</h2>
+      <img class="poster" src="images/52.jpg" alt="Постер фильма на 52-м месте" loading="lazy">
+      <p>Динамичный фильм Майкла Бэя о предательстве и правде. Иэн Маккеллен и Скарлетт Йоханссон прекрасно отыграли свои роли.</p>
+    </article>
+
+    <article class="entry" id="place-51">
+      <div class="rank">МЕСТО</div>
+      <h2>Джентльмены удачи</h2>
+      <img class="poster" src="images/51.jpg" alt="Постер фильма на 51-м месте" loading="lazy">
+      <p>Умопомрачительный фильм про полицейского под прикрытием. Суперсмешная комедия, разобранная на цитаты.</p>
+    </article>
+
+    <article class="entry" id="place-50">
+      <div class="rank">МЕСТО</div>
+      <h2>Кто я?</h2>
+      <img class="poster" src="images/50.jpg" alt="Постер фильма на 50-м месте" loading="lazy">
+      <p>Напряжённый фильм с Джеки Чаном, где потеря памяти главного героя создаёт интригу. Особенно запоминаются финальная сцена на крыше и трюк Джеки Чана.</p>
+    </article>
+
+    <article class="entry" id="place-49">
+      <div class="rank">МЕСТО</div>
+      <h2>Иллюзия обмана — трилогия</h2>
+      <img class="poster" src="images/49.jpg" alt="Постер фильма на 49-м месте" loading="lazy">
+      <p>Команда фокусников проворачивает аферы и грабит банки. Фильмы сочетают напряжённую атмосферу с запутанными фокусами.</p>
+    </article>
+
+    <article class="entry" id="place-48">
+      <div class="rank">МЕСТО</div>
+      <h2>Индиана Джонс: В поисках утраченного ковчега</h2>
+      <img class="poster" src="images/48.jpg" alt="Постер фильма на 48-м месте" loading="lazy">
+      <p>Приключение на все времена. Учёный с хлыстом, которого сыграл Харрисон Форд, ищет давно потерянный ковчег.</p>
+    </article>
+
+    <article class="entry" id="place-47">
+      <div class="rank">МЕСТО</div>
+      <h2>Бриллиантовая рука</h2>
+      <img class="poster" src="images/47.jpg" alt="Постер фильма на 47-м месте" loading="lazy">
+      <p>Рассеянный Семён Семёнович с бриллиантами в руке убегает от злоумышленников. Андрей Миронов и Анатолий Папанов создают великолепный дуэт.</p>
+    </article>
+
+    <article class="entry" id="place-46">
+      <div class="rank">МЕСТО</div>
+      <h2>Пираты Карибского моря: Проклятие Чёрной жемчужины</h2>
+      <img class="poster" src="images/46.jpg" alt="Постер фильма на 46-м месте" loading="lazy">
+      <p>Фильм Disney создал легендарных пиратов и их головокружительные приключения. Запоминаются роль Джонни Деппа и костюмы.</p>
+    </article>
+
+    <article class="entry" id="place-45">
+      <div class="rank">МЕСТО</div>
+      <h2>Брестская крепость</h2>
+      <img class="poster" src="images/45.jpg" alt="Постер фильма на 45-м месте" loading="lazy">
+      <p>Любимый военный фильм автора. Режиссёр передал ощущение войны, а актёры и спецэффекты произвели сильное впечатление.</p>
+    </article>
+
+    <article class="entry" id="place-44">
+      <div class="rank">МЕСТО</div>
+      <h2>Час пик</h2>
+      <img class="poster" src="images/44.jpg" alt="Постер фильма на 44-м месте" loading="lazy">
+      <p>Задорное кино с Джеки Чаном и Крисом Такером, после которого ещё долго вспоминаешь шутки.</p>
+    </article>
+
+    <article class="entry" id="place-43">
+      <div class="rank">МЕСТО</div>
+      <h2>Агенты А.Н.К.Л.</h2>
+      <img class="poster" src="images/43.jpg" alt="Постер фильма на 43-м месте" loading="lazy">
+      <p>Уморительный фильм о приключениях двух агентов на секретной миссии. Особенно выделяется химия между главными героями.</p>
+    </article>
+
+    <article class="entry" id="place-42">
+      <div class="rank">МЕСТО</div>
+      <h2>Призраки в Венеции</h2>
+      <img class="poster" src="images/42.jpg" alt="Постер фильма на 42-м месте" loading="lazy">
+      <p>Изумительно поставленный фильм про Эркюля Пуаро, который сочетает детектив и элементы ужастика.</p>
+    </article>
+
+    <article class="entry" id="place-41">
+      <div class="rank">МЕСТО</div>
+      <h2>Берегись автомобиля</h2>
+      <img class="poster" src="images/41.jpg" alt="Постер фильма на 41-м месте" loading="lazy">
+      <p>Чёрно-белая кинокомедия про честного угонщика машин Юрия Деточкина с отличной погоней и уморительными сценами.</p>
+    </article>
+
+    <article class="entry" id="place-40">
+      <div class="rank">МЕСТО</div>
+      <h2>В поисках снежного барса</h2>
+      <img class="poster" src="images/40.jpg" alt="Постер фильма на 40-м месте" loading="lazy">
+      <p>Красивый документальный фильм о путешественниках, которые ищут снежного барса в горах Тибета.</p>
+    </article>
+
+    <article class="entry" id="place-39">
+      <div class="rank">МЕСТО</div>
+      <h2>Отель «Гранд Будапешт»</h2>
+      <img class="poster" src="images/39.jpg" alt="Постер фильма на 39-м месте" loading="lazy">
+      <p>Уморительная комедия Уэса Андерсона с ламповым стилем, прекрасным актёрским составом и хорошо прописанными персонажами.</p>
+    </article>
+
+    <article class="entry" id="place-38">
+      <div class="rank">МЕСТО</div>
+      <h2>Хатико: Самый верный друг</h2>
+      <img class="poster" src="images/38.jpg" alt="Постер фильма на 38-м месте" loading="lazy">
+      <p>Очень трогательный фильм о взаимосвязи собаки и хозяина. Автор советует запастись салфетками.</p>
+    </article>
+
+    <article class="entry" id="place-37">
+      <div class="rank">МЕСТО</div>
+      <h2>Крупная рыба</h2>
+      <img class="poster" src="images/37.jpg" alt="Постер фильма на 37-м месте" loading="lazy">
+      <p>Фэнтезийный фильм Тима Бёртона. Картина похожа на фантазию ребёнка и уделяет много внимания отношениям отца и сына.</p>
+    </article>
+
+    <article class="entry" id="place-36">
+      <div class="rank">МЕСТО</div>
+      <h2>Тринадцатый этаж</h2>
+      <img class="poster" src="images/36.jpg" alt="Постер фильма на 36-м месте" loading="lazy">
+      <p>Научно-фантастический фильм про виртуальную реальность с мрачной атмосферой, детективным сюжетом и стилистикой нуара.</p>
+    </article>
+
+    <article class="entry" id="place-35">
+      <div class="rank">МЕСТО</div>
+      <h2>Исходный код</h2>
+      <img class="poster" src="images/35.jpg" alt="Постер фильма на 35-м месте" loading="lazy">
+      <p>Захватывающий фильм с механикой «Дня сурка»: спецагент должен вычислить террориста за восемь минут.</p>
+    </article>
+
+    <article class="entry" id="place-34">
+      <div class="rank">МЕСТО</div>
+      <h2>Матрица</h2>
+      <img class="poster" src="images/34.jpg" alt="Постер фильма на 34-м месте" loading="lazy">
+      <p>Запутанный фильм с Киану Ривзом о ненастоящей реальности, который оставляет много вопросов.</p>
+    </article>
+
+    <article class="entry" id="place-33">
+      <div class="rank">МЕСТО</div>
+      <h2>Терминатор — дилогия</h2>
+      <img class="poster" src="images/33.jpg" alt="Постер фильма на 33-м месте" loading="lazy">
+      <p>Пафос, сеттинг и сюжет делают дилогию особенной. Автор отдельно вспоминает знаменитую фразу «I&#x27;ll be back».</p>
+    </article>
+
+    <article class="entry" id="place-32">
+      <div class="rank">МЕСТО</div>
+      <h2>Тёмный рыцарь — трилогия Кристофера Нолана</h2>
+      <img class="poster" src="images/32.jpg" alt="Постер фильма на 32-м месте" loading="lazy">
+      <p>Мрачная история Готэма. Автор отмечает трилогию Нолана и особенно Джокера в исполнении Хита Леджера.</p>
+    </article>
+
+    <article class="entry" id="place-31">
+      <div class="rank">МЕСТО</div>
+      <h2>Человек-паук — трилогия Сэма Рэйми</h2>
+      <img class="poster" src="images/31.jpg" alt="Постер фильма на 31-м месте" loading="lazy">
+      <p>Одна из любимых супергеройских трилогий автора: захватывающий сюжет, игра актёров и операторская работа.</p>
+    </article>
+
+    <article class="entry" id="place-30">
+      <div class="rank">МЕСТО</div>
+      <h2>Невероятная жизнь Уолтера Митти</h2>
+      <img class="poster" src="images/30.jpg" alt="Постер фильма на 30-м месте" loading="lazy">
+      <p>Вдохновляющая картина с невероятными пейзажами и прекрасной актёрской игрой Бена Стиллера.</p>
+    </article>
+
+    <article class="entry" id="place-29">
+      <div class="rank">МЕСТО</div>
+      <h2>День сурка</h2>
+      <img class="poster" src="images/29.jpg" alt="Постер фильма на 29-м месте" loading="lazy">
+      <p>Фильм, который сделал повторяющийся день известной сюжетной концепцией. Билл Мюррей убедительно играет главного героя.</p>
+    </article>
+
+    <article class="entry" id="place-28">
+      <div class="rank">МЕСТО</div>
+      <h2>Приключения Петрова и Васечкина / Каникулы Петрова и Васечкина</h2>
+      <img class="poster" src="images/28.jpg" alt="Постер фильма на 28-м месте" loading="lazy">
+      <p>Советский мюзикл про двух лучших друзей, смешные ситуации, музыку и песни.</p>
+    </article>
+
+    <article class="entry" id="place-27">
+      <div class="rank">МЕСТО</div>
+      <h2>Ф1</h2>
+      <img class="poster" src="images/27.jpg" alt="Постер фильма на 27-м месте" loading="lazy">
+      <p>Фильм о Формуле-1 с Брэдом Питтом. Автор отмечает съёмки, музыку и то, что после просмотра влюбился в гонки.</p>
+    </article>
+
+    <article class="entry" id="place-26">
+      <div class="rank">МЕСТО</div>
+      <h2>Фильмы о Джеймсе Бонде (2006–2021)</h2>
+      <img class="poster" src="images/26.jpg" alt="Постер фильма на 26-м месте" loading="lazy">
+      <p>Фильмы с Дэниелом Крейгом в роли агента 007: интересный сюжет, юмор, напряжённые сцены и запоминающиеся саундтреки.</p>
+    </article>
+
+    <article class="entry" id="place-25">
+      <div class="rank">МЕСТО</div>
+      <h2>Достать ножи — трилогия</h2>
+      <img class="poster" src="images/25.jpg" alt="Постер фильма на 25-м месте" loading="lazy">
+      <p>Запутанные детективы с Дэниелом Крэйгом. У каждого свидетеля есть мотив и алиби, а зритель пытается угадать убийцу.</p>
+    </article>
+
+    <article class="entry" id="place-24">
+      <div class="rank">МЕСТО</div>
+      <h2>Поймай меня, если сможешь</h2>
+      <img class="poster" src="images/24.jpg" alt="Постер фильма на 24-м месте" loading="lazy">
+      <p>Фильм о молодом мошеннике, который проворачивает аферы на миллионы. Автор отмечает работу Стивена Спилберга и игру Леонардо ДиКаприо.</p>
+    </article>
+
+    <article class="entry" id="place-23">
+      <div class="rank">МЕСТО</div>
+      <h2>Артур, ты король!</h2>
+      <img class="poster" src="images/23.jpg" alt="Постер фильма на 23-м месте" loading="lazy">
+      <p>Приключенческий фильм с красивыми пейзажами, командой спортсменов и собакой. Автору понравились юмор и актёрский состав.</p>
+    </article>
+
+    <article class="entry" id="place-22">
+      <div class="rank">МЕСТО</div>
+      <h2>Звёздные войны. Эпизод IV: Новая надежда</h2>
+      <img class="poster" src="images/22.jpg" alt="Постер фильма на 22-м месте" loading="lazy">
+      <p>Фантастический боевик с впечатляющей для своего времени графикой, который произвёл фурор.</p>
+    </article>
+
+    <article class="entry" id="place-21">
+      <div class="rank">МЕСТО</div>
+      <h2>Шерлок Холмс — дилогия</h2>
+      <img class="poster" src="images/21.jpg" alt="Постер фильма на 21-м месте" loading="lazy">
+      <p>Фильмы Гая Ричи с клёвой операторской работой, динамичным сюжетом и запоминающимися сценами драк.</p>
+    </article>
+
+    <article class="entry" id="place-20">
+      <div class="rank">МЕСТО</div>
+      <h2>Мой пёс Руни</h2>
+      <img class="poster" src="images/20.jpg" alt="Постер фильма на 20-м месте" loading="lazy">
+      <p>Милое роуд-муви с собаками, глубоким смыслом, забавными ситуациями и шутками.</p>
+    </article>
+
+    <article class="entry" id="place-19">
+      <div class="rank">МЕСТО</div>
+      <h2>11 друзей Оушена</h2>
+      <img class="poster" src="images/19.jpg" alt="Постер фильма на 19-м месте" loading="lazy">
+      <p>История одиннадцати друзей, которые грабят хорошо охраняемый банк. У каждого героя своя роль.</p>
+    </article>
+
+    <article class="entry" id="place-18">
+      <div class="rank">МЕСТО</div>
+      <h2>Гладиатор</h2>
+      <img class="poster" src="images/18.jpg" alt="Постер фильма на 18-м месте" loading="lazy">
+      <p>Фильм о доблести и мести. Автор отмечает режиссуру Ридли Скотта и игру Рассела Кроу.</p>
+    </article>
+
+    <article class="entry" id="place-17">
+      <div class="rank">МЕСТО</div>
+      <h2>Изгой</h2>
+      <img class="poster" src="images/17.jpg" alt="Постер фильма на 17-м месте" loading="lazy">
+      <p>История одинокого героя в исполнении Тома Хэнкса. Картина держит в напряжении до самого конца.</p>
+    </article>
+
+    <article class="entry" id="place-16">
+      <div class="rank">МЕСТО</div>
+      <h2>Кристофер Робин</h2>
+      <img class="poster" src="images/16.jpg" alt="Постер фильма на 16-м месте" loading="lazy">
+      <p>Фильм о доброте и о том, что каждый взрослый всё ещё ребёнок. Автор отмечает Винни и его друзей и игру Юэна Макгрегора.</p>
+    </article>
+
+    <article class="entry" id="place-15">
+      <div class="rank">МЕСТО</div>
+      <h2>Кавказская пленница, или Новые приключения Шурика</h2>
+      <img class="poster" src="images/15.jpg" alt="Постер фильма на 15-м месте" loading="lazy">
+      <p>Одна из лучших комедий автора: Гайдай, запоминающиеся персонажи и множество шуток.</p>
+    </article>
+
+    <article class="entry" id="place-14">
+      <div class="rank">МЕСТО</div>
+      <h2>Интерстеллар</h2>
+      <img class="poster" src="images/14.jpg" alt="Постер фильма на 14-м месте" loading="lazy">
+      <p>Очень красивый научно-фантастический фильм Кристофера Нолана с Мэттью Макконахи и Энн Хэтэуэй.</p>
+    </article>
+
+    <article class="entry" id="place-13">
+      <div class="rank">МЕСТО</div>
+      <h2>Крёстный отец — трилогия</h2>
+      <img class="poster" src="images/13.jpg" alt="Постер фильма на 13-м месте" loading="lazy">
+      <p>Фильмы о верности, власти, морали и долге. Первые две части занимают высокие места в рейтинге IMDb.</p>
+    </article>
+
+    <article class="entry" id="place-12">
+      <div class="rank">МЕСТО</div>
+      <h2>Приведение</h2>
+      <img class="poster" src="images/12.jpg" alt="Постер фильма на 12-м месте" loading="lazy">
+      <p>Необычный фильм с шикарным сюжетом, продуманными персонажами и множеством шуток.</p>
+    </article>
+
+    <article class="entry" id="place-11">
+      <div class="rank">МЕСТО</div>
+      <h2>Крепкий орешек</h2>
+      <img class="poster" src="images/11.jpg" alt="Постер фильма на 11-м месте" loading="lazy">
+      <p>Динамичный фильм с актёрской игрой, сценами действия и шутками. Автор отдельно отмечает Алана Рикмана.</p>
+    </article>
+
+    <article class="entry" id="place-10">
+      <div class="rank">МЕСТО</div>
+      <h2>Пробуждение</h2>
+      <img class="poster" src="images/10.jpg" alt="Постер фильма на 10-м месте" loading="lazy">
+      <p>Трогательный фильм о пациентах с тяжёлым заболеванием. Автор высоко оценивает игру Роберта Де Ниро и Робина Уильямса.</p>
+    </article>
+
+    <article class="entry" id="place-9">
+      <div class="rank">МЕСТО</div>
+      <h2>Гарри Поттер</h2>
+      <img class="poster" src="images/9.jpg" alt="Постер фильма на 9-м месте" loading="lazy">
+      <p>Автор не стал выбирать один фильм и считает, что всю серию нужно смотреть как единое целое.</p>
+    </article>
+
+    <article class="entry" id="place-8">
+      <div class="rank">МЕСТО</div>
+      <h2>Шоу Трумана</h2>
+      <img class="poster" src="images/8.jpg" alt="Постер фильма на 8-м месте" loading="lazy">
+      <p>Фильм о свободе выбора и о том, что человек сам вправе решать, кем ему быть. Автор отмечает роль Джима Керри.</p>
+    </article>
+
+    <article class="entry" id="place-7">
+      <div class="rank">МЕСТО</div>
+      <h2>Властелин колец — трилогия</h2>
+      <img class="poster" src="images/7.jpg" alt="Постер фильма на 7-м месте" loading="lazy">
+      <p>Захватывающая история о хоббитах в Средиземье. Автор выделяет костюмы, локации и персонажей.</p>
+    </article>
+
+    <article class="entry" id="place-6">
+      <div class="rank">МЕСТО</div>
+      <h2>Операция «Ы» и другие приключения Шурика</h2>
+      <img class="poster" src="images/6.jpg" alt="Постер фильма на 6-м месте" loading="lazy">
+      <p>Любимая комедия Гайдая: много шуток и запоминающихся персонажей.</p>
+    </article>
+
+    <article class="entry" id="place-5">
+      <div class="rank">МЕСТО</div>
+      <h2>Начало</h2>
+      <img class="poster" src="images/5.jpg" alt="Постер фильма на 5-м месте" loading="lazy">
+      <p>Легендарный фильм про сны. Необычный сюжет Нолана, динамика и удивительный актёрский состав.</p>
+    </article>
+
+    <article class="entry" id="place-4">
+      <div class="rank">МЕСТО</div>
+      <h2>Собачья жизнь</h2>
+      <img class="poster" src="images/4.jpg" alt="Постер фильма на 4-м месте" loading="lazy">
+      <p>Лёгкий фильм с глубоким смыслом, добродушием и собачками.</p>
+    </article>
+
+    <article class="entry" id="place-3">
+      <div class="rank">МЕСТО</div>
+      <h2>Хоббит — трилогия</h2>
+      <img class="poster" src="images/3.jpg" alt="Постер фильма на 3-м месте" loading="lazy">
+      <p>Трилогия по произведению Дж. Р. Р. Толкина с красивой картинкой, костюмами и Мартином Фрименом в роли Бильбо.</p>
+    </article>
+
+    <article class="entry" id="place-2">
+      <div class="rank">МЕСТО</div>
+      <h2>Назад в будущее — трилогия</h2>
+      <img class="poster" src="images/2.webp" alt="Постер фильма на 2-м месте" loading="lazy">
+      <p>Любимая научно-фантастическая трилогия автора, которая остаётся увлекательной спустя десятилетия.</p>
+    </article>
+
+    <article class="entry" id="place-1">
+      <div class="rank">МЕСТО</div>
+      <h2>Приключения Паддингтона — трилогия</h2>
+      <img class="poster" src="images/1.webp" alt="Постер фильма на 1-м месте" loading="lazy">
+      <p>Ламповая трилогия про любителя мармелада Паддингтона, полная юмора и доброты.</p>
+    </article>
+<div class="links">
+<a href="https://telegra.ph/Moj-top-2-chast-11-29" target="_blank" rel="noopener">Оригинал второй части</a>
+<a href="https://telegra.ph/Moj-top-07-28" target="_blank" rel="noopener">Оригинал первой части</a>
+</div>
+</main>
+<footer>Мой топ фильмов · локальный HTML-архив</footer>
+
+<script id="auto-ranking">
+/*
+  Автонумерация:
+  сколько фильмов находится в списке, столько и будет первое место.
+  Перемещай целые блоки <article class="entry"> — места пересчитаются сами.
+*/
+document.addEventListener("DOMContentLoaded", () => {
+  const entries = [...document.querySelectorAll("article.entry")];
+  entries.forEach((entry, index) => {
+    const place = entries.length - index;
+    const rank = entry.querySelector(".rank");
+    if (rank) rank.textContent = `${place} МЕСТО`;
+    entry.id = `place-${place}`;
+    const poster = entry.querySelector("img.poster");
+    if (poster) poster.alt = `Постер фильма на ${place}-м месте`;
+  });
+});
+</script>
+
+</body>
+</html>
