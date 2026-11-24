@@ -5,6 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Мой топ фильмов — от 64-го до 1-го места</title>
 <style>
+/* Панель навигации */
+.nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid #e8e8e8;
+    padding: 10px 16px;
+}
+
+.nav-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    scrollbar-width: none; /* скрываем полосу прокрутки в Firefox */
+}
+.nav-links::-webkit-scrollbar { display: none; } /* в Chrome/Safari */
+
+.nav-links a {
+    font: 700 12px Arial, sans-serif;
+    color: #555;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #f0f0f0;
+    white-space: nowrap;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    background: #2783c5;
+    color: #fff;
+}
+
+#movie-search {
+    font: 14px Arial, sans-serif;
+    padding: 6px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 190px;
+    outline: none;
+}
+
+#movie-search:focus {
+    border-color: #2783c5;
+}
+
+/* Отступ сверху при прыжке, чтобы вся карточка и плашка МЕСТО были видны с запасом */
+[id^="place-"] {
+  scroll-margin-top: 140px;
+}
+
+
+@media(max-width:600px) {
+    #movie-search { width: 100%; }
+    .entry { scroll-margin-top: 110px; }
+}
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:#f7f7f7;color:#222;font:17px/1.7 Georgia,"Times New Roman",serif}
@@ -52,10 +121,36 @@ html,body{overflow-x:hidden}
 .links a{display:flex;align-items:center;min-height:44px;min-width:44px;margin-right:0;padding:8px 0}
 footer{font-size:16px;line-height:1.5;padding:30px 18px calc(30px + env(safe-area-inset-bottom))}
 }
+/* Прижимаем поле поиска строго к правому краю */
+div:has(> input),
+.search-box {
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+div:has(> input) input,
+.search-box input {
+  width: 300px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: 40px; /* ← Меняйте это число, чтобы двигать поле левее или правее */
+}
+
+
 </style>
 </head>
 <body>
 <header><div class="brand">Личный архив публикаций</div></header>
+<nav class="nav-bar">
+    <div class="nav-inner">
+        <input type="text" id="movie-search" placeholder="Найти фильм..." oninput="filterMovies()">
+    </div>
+</nav>
+
 <main>
 <h1>Мой топ фильмов</h1>
 <div class="meta">Общий рейтинг · от 64-го места к 1-му</div>
@@ -150,7 +245,7 @@ footer{font-size:16px;line-height:1.5;padding:30px 18px calc(30px + env(safe-are
       <div class="rank">МЕСТО</div>
       <h2>Остров</h2>
       <img class="poster" src="images/52.jpg" alt="Постер фильма на 52-м месте" loading="lazy">
-      <p>Динамичный фильм Майкла Бэя о предательстве и правде. Иен Маккеллен и Скарлетт Йоханссон прекрасно отыграли свои роли, а количество сцен экшена в фильме зашкаливает.</p>
+      <p>Динамичный фильм Майкла Бэя о предательстве и правде. Юэн Макгрегор и Скарлетт Йоханссон прекрасно отыграли свои роли, а количество сцен экшена в фильме зашкаливает.</p>
     </article>
 
     <article class="entry" id="place-51">
@@ -534,6 +629,23 @@ document.addEventListener("DOMContentLoaded", () => {
     if (poster) poster.alt = `Постер фильма на ${place}-м месте`;
   });
 });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Находим ваше уже существующее поле поиска наверху страницы
+    const input = document.querySelector("input");
+    const entries = [...document.querySelectorAll("article.entry")];
+
+    if (!input) return;
+
+    input.addEventListener("input", () => {
+      const q = input.value.trim().toLowerCase();
+      entries.forEach((entry) => {
+        const text = entry.textContent.toLowerCase();
+        entry.style.display = !q || text.includes(q) ? "" : "none";
+      });
+    });
+  });
 </script>
 
 </body>
