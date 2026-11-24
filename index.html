@@ -131,6 +131,23 @@ div:has(> input),
   margin-left: auto;
   margin-right: 0;
 }
+/* На телефонах (экраны уже 600px) растягиваем поиск аккуратно по ширине */
+@media (max-width: 600px) {
+  div:has(> input),
+  .search-box {
+    justify-content: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+
+  div:has(> input) input,
+  .search-box input {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
 div:has(> input) input,
 .search-box input {
